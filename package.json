@@ -1,0 +1,26 @@
+{
+  "name": "handebol-challenge",
+  "version": "1.0.0",
+  "description": "Aplicativo do Desafio Amazonense de Handebol Infantil",
+  "author": "Seu Nome <seu@email.com>",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.example.handebolapp",
+    "productName": "Handebol Challenge",
+    "win": {
+      "target": "portable",
+      "icon": "assets/icon.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
