@@ -93,12 +93,42 @@ body {
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s ease, transform 0.3s ease; /* Suavidade */
 }
 
 /* Navigation link hover state */
 .main-nav a:hover {
     color: var(--yellow);
+    transform: scale(1.1);
+}
+/* Sublinhado animado */
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007BFF;
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+    width: 100%; /* Sublinhado aparece ao passar o mouse */
+}
+
+/* Efeito de "fade-in" na logo */
+.logo {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* ====================== */
