@@ -1,3 +1,7 @@
+/* ====================== */
+/* CSS VARIABLES */
+/* ====================== */
+/* Define global color variables used throughout the site */
 :root {
     --dark-blue: #002147;
     --medium-blue: #003366;
@@ -5,6 +9,10 @@
     --white: #FFFFFF;
 }
 
+/* ====================== */
+/* GLOBAL STYLES */
+/* ====================== */
+/* Reset and base styles for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +20,10 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* ====================== */
+/* PAGE BODY */
+/* ====================== */
+/* Base styles for the page body */
 body {
     line-height: 1.6;
     color: #333;
@@ -33,37 +45,50 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+/* Container for logo and title */
 .logo-container {
     display: flex;
     align-items: center;
 }
 
+/* Logo image styles */
 .logo {
     height: 60px;
     margin-right: 1rem;
 }
 
+/* ====================== */
+/* HEADER TITLE */
+/* ====================== */
+/* Main title in header */
 .title-container h1 {
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
     color: var(--yellow);
 }
 
+/* Subtitle in header */
 .title-container h2 {
     font-size: 1.2rem;
     font-weight: normal;
     color: var(--white);
 }
 
+/* ====================== */
+/* NAVIGATION */
+/* ====================== */
+/* Main navigation menu */
 .main-nav ul {
     display: flex;
     list-style: none;
 }
 
+/* Navigation menu items */
 .main-nav li {
     margin-left: 1.5rem;
 }
 
+/* Navigation links */
 .main-nav a {
     color: var(--white);
     text-decoration: none;
@@ -71,19 +96,26 @@ body {
     transition: color 0.3s;
 }
 
+/* Navigation link hover state */
 .main-nav a:hover {
     color: var(--yellow);
 }
 
+/* ====================== */
+/* PAGE SECTIONS */
+/* ====================== */
+/* Base styles for all content sections */
 .section {
     padding: 3rem 1rem;
     min-height: 100vh;
 }
 
+/* Alternate background for odd sections */
 .section:nth-child(odd) {
     background-color: #f5f5f5;
 }
 
+/* Section heading styles */
 .section h2 {
     color: var(--dark-blue);
     margin-bottom: 1.5rem;
@@ -91,11 +123,16 @@ body {
     font-size: 2rem;
 }
 
+/* Content container for centering content */
 .content {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* ====================== */
+/* TABLES */
+/* ====================== */
+/* Styles for game and classification tables */
 .games-table, .classification-table {
     background: var(--white);
     padding: 1rem;
@@ -105,36 +142,50 @@ body {
     overflow-x: auto;
 }
 
+/* Table base styles */
 .games-table table {
     width: 100%;
     border-collapse: collapse;
 }
 
+/* Table header and cell styles */
+/* ====================== */
+/* TABLE CELLS */
+/* ====================== */
+/* Table header and cell styles */
 .games-table th, .games-table td {
     padding: 0.75rem;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
+/* Table header specific styles */
 .games-table th {
     background-color: var(--medium-blue);
     color: white;
     font-weight: bold;
 }
 
+/* Zebra striping for table rows */
 .games-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* Table row hover effect */
 .games-table tr:hover {
     background-color: #f1f1f1;
 }
 
+/* Style for upcoming games */
 .games-table .upcoming {
     font-weight: bold;
     color: var(--dark-blue);
 }
 
+/* ====================== */
+/* RESPONSIVE STYLES */
+/* ====================== */
+/* Tablet and mobile breakpoint */
 @media (max-width: 768px) {
     .games-table table {
         font-size: 0.9rem;
@@ -145,7 +196,10 @@ body {
     }
 }
 
-/* Gallery Styles */
+/* ====================== */
+/* GALLERY SECTION */
+/* ====================== */
+/* Photo gallery styles */
 .gallery-container {
     margin-bottom: 2rem;
 }
@@ -188,7 +242,10 @@ body {
     color: var(--yellow);
 }
 
-/* News Highlights */
+/* ====================== */
+/* NEWS SECTION */
+/* ====================== */
+/* News highlights cards */
 .highlights-container {
     margin-top: 2rem;
 }
@@ -222,6 +279,10 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* ====================== */
+/* RESPONSIVE BREAKPOINT */
+/* ====================== */
+/* Tablet and mobile styles */
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -251,6 +312,10 @@ body {
     }
 }
 
+/* ====================== */
+/* FOOTER */
+/* ====================== */
+/* Site footer styles */
 .footer {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -259,7 +324,10 @@ body {
     margin-top: 2rem;
 }
 
-/* About Section Styles */
+/* ====================== */
+/* ABOUT SECTION */
+/* ====================== */
+/* About page specific styles */
 .about-intro {
     margin-bottom: 2rem;
     text-align: center;
@@ -360,7 +428,10 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Contact Section Styles */
+/* ====================== */
+/* CONTACT SECTION */
+/* ====================== */
+/* Contact page specific styles */
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -370,14 +441,6 @@ body {
 .contact-info {
     display: grid;
     gap: 1.5rem;
-}
-
-.contact-card {
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-top: 4px solid var(--yellow);
 }
 
 .contact-card {
@@ -467,12 +530,20 @@ body {
     background: #e6c200;
 }
 
+/* ====================== */
+/* RESPONSIVE BREAKPOINT */
+/* ====================== */
+/* Tablet and mobile styles */
 @media (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
     }
 }
 
+/* ====================== */
+/* RESPONSIVE BREAKPOINT */
+/* ====================== */
+/* Mobile-specific styles */
 @media (max-width: 480px) {
     .title-container h1 {
         font-size: 1.2rem;
@@ -491,7 +562,10 @@ body {
     }
 }
 
-/* Classification Section Styles */
+/* ====================== */
+/* CLASSIFICATION SECTION */
+/* ====================== */
+/* Team classification tables */
 .groups-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -545,6 +619,10 @@ body {
     color: var(--dark-blue);
 }
 
+/* ====================== */
+/* RESPONSIVE BREAKPOINT */
+/* ====================== */
+/* Tablet and mobile styles */
 @media (max-width: 768px) {
     .groups-container {
         grid-template-columns: 1fr;
@@ -555,7 +633,10 @@ body {
     }
 }
 
-/* Results Section Styles */
+/* ====================== */
+/* RESULTS SECTION */
+/* ====================== */
+/* Game results cards */
 .results-container {
     display: grid;
     gap: 1.5rem;
@@ -621,6 +702,10 @@ body {
     border-top: 1px solid #eee;
 }
 
+/* ====================== */
+/* RESPONSIVE BREAKPOINT */
+/* ====================== */
+/* Tablet and mobile styles */
 @media (max-width: 768px) {
     .team {
         flex-direction: row;
@@ -633,7 +718,10 @@ body {
     }
 }
 
-/* Teams Section Styles */
+/* ====================== */
+/* TEAMS SECTION */
+/* ====================== */
+/* Team profile cards */
 .teams-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -670,13 +758,20 @@ body {
     margin-bottom: 0.3rem;
 }
 
+/* ====================== */
+/* RESPONSIVE BREAKPOINT */
+/* ====================== */
+/* Tablet and mobile styles */
 @media (max-width: 768px) {
     .teams-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
 
-/* Regulation Section Styles */
+/* ====================== */
+/* REGULATIONS SECTION */
+/* ====================== */
+/* Rules and regulations accordion */
 .regulation-container {
     max-width: 800px;
     margin: 0 auto;
