@@ -380,6 +380,13 @@ body {
     border-top: 4px solid var(--yellow);
 }
 
+.contact-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--yellow);
+}
 .contact-card h3 {
     color: var(--dark-blue);
     margin-bottom: 1rem;
