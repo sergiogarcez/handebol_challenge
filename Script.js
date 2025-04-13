@@ -76,3 +76,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Handball Challenge website loaded');
 });
+
