@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Jogos - Desafio Amazonense de Handebol Infantil</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../assets/logo.jpg" alt="Logo" class="logo">
+            <div class="title-container">
+                <h1>Desafio Amazonense de Handebol Infantil</h1>
+                <h2>Handebol Infantil</h2>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="pages\index.html">Inicio</a></li>
+                <li><a href="pages\sobre.html">Sobre</a></li>
+                <li><a href="pages\jogos.html">Tabela de Jogos</a></li>
+                <li><a href="pages\equipes.html">Equipes</a></li>
+                <li><a href="pages\resultados.html">Resultados</a></li>
+                <li><a href="pages\contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="jogos" class="section">
+            <h2>Tabela de Jogos</h2>
+            <div class="content">
+                <div class="naipe-tabs">
+                    <button class="tab-button active" onclick="openNaipe(event, 'masculino')">Masculino</button>
+                    <button class="tab-button" onclick="openNaipe(event, 'feminino')">Feminino</button>
+                </div>
+
+                <div id="masculino" class="naipe-content" style="display: block;">
+                    <div class="games-table">
+                        <h3>Jogos - Naipe Masculino</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Horário</th>
+                                    <th>Confronto</th>
+                                    <th>Formato</th>
+                                    <th>Local</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Exemplo de rodada -->
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>09:00</td>
+                                    <td>Santa Etelvina x Jarlece Zaranza</td>
+                                    <td>Tradicional</td>
+                                    <td>Quadra 1</td>
+                                </tr>
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>09:45</td>
+                                    <td>Santa Etelvina x Jarlece Zaranza</td>
+                                    <td>Defesas Alternadas</td>
+                                    <td>Quadra 1</td>
+                                </tr>
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>10:30</td>
+                                    <td>Santa Etelvina x Jarlece Zaranza</td>
+                                    <td>Pontuação por Desempenho</td>
+                                    <td>Quadra 1</td>
+                                </tr>
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>11:15</td>
+                                    <td>Nelson Alves x Adalberto Valle</td>
+                                    <td>Tradicional</td>
+                                    <td>Quadra 2</td>
+                                </tr>
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>12:00</td>
+                                    <td>Nelson Alves x Adalberto Valle</td>
+                                    <td>Defesas Alternadas</td>
+                                    <td>Quadra 2</td>
+                                </tr>
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>12:45</td>
+                                    <td>Nelson Alves x Adalberto Valle</td>
+                                    <td>Pontuação por Desempenho</td>
+                                    <td>Quadra 2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="feminino" class="naipe-content" style="display: none;">
+                    <div class="games-table">
+                        <h3>Jogos - Naipe Feminino</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Horário</th>
+                                    <th>Confronto</th>
+                                    <th>Formato</th>
+                                    <th>Local</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Exemplo de rodada -->
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>14:00</td>
+                                    <td>Santa Etelvina x Jarlece Zaranza</td>
+                                    <td>Tradicional</td>
+                                    <td>Quadra 1</td>
+                                </tr>
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>14:45</td>
+                                    <td>Santa Etelvina x Jarlece Zaranza</td>
+                                    <td>Defesas Alternadas</td>
+                                    <td>Quadra 1</td>
+                                </tr>
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>15:30</td>
+                                    <td>Santa Etelvina x Jarlece Zaranza</td>
+                                    <td>Pontuação por Desempenho</td>
+                                    <td>Quadra 1</td>
+                                </tr>
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>16:15</td>
+                                    <td>Rio Negro x Adalberto Valle</td>
+                                    <td>Tradicional</td>
+                                    <td>Quadra 2</td>
+                                </tr>
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>17:00</td>
+                                    <td>Rio Negro x Adalberto Valle</td>
+                                    <td>Defesas Alternadas</td>
+                                    <td>Quadra 2</td>
+                                </tr>
+                                <tr>
+                                    <td>15/05</td>
+                                    <td>17:45</td>
+                                    <td>Rio Negro x Adalberto Valle</td>
+                                    <td>Pontuação por Desempenho</td>
+                                    <td>Quadra 2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function openNaipe(evt, naipe) {
+                    var i, tabcontent, tabbuttons;
+                    
+                    tabcontent = document.getElementsByClassName("naipe-content");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tabbuttons = document.getElementsByClassName("tab-button");
+                    for (i = 0; i < tabbuttons.length; i++) {
+                        tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(naipe).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Desafio Amazonense de Handebol Infantil</p>
+    </footer>
+
+    <script src="../../Script.js"></script>
+</body>
+</html>

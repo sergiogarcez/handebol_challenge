@@ -28,7 +28,11 @@ O projeto faz parte de uma pesquisa do Laboratório de Pedagogia do Esporte (LAP
 
 **Desenvolvimento do Site**: 
 - Douglas da Costa Cruz (douglascruztst11@gmail.com)
+<<<<<<< HEAD
 - Sérgio Juniors Garcez (seegio.jr.10@gmail)
+=======
+- Sérgio Juniors Garcez (seegio.jr.10@gmail.com)
+>>>>>>> 2ec60ff693bcf9562150a59f381c1cd148632dd0
 
 **Contato Principal**: 
 - (92) 98418-4450 (WhatsApp)

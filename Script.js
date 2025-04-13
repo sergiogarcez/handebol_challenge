@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     regulationItems.forEach(item => {
         const header = item.querySelector('.regulation-header');
         header.addEventListener('click', () => {
+            console.log('Regulation header clicked:', header);
             // Close all other items
             regulationItems.forEach(otherItem => {
                 if (otherItem !== item) {
