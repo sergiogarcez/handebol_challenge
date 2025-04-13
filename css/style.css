@@ -88,32 +88,13 @@ body {
     margin-left: 1.5rem;
 }
 
-<<<<<<< HEAD
-/* Navigation buttons */
-.nav-button {
-    background: none;
-    border: none;
-=======
 /* Navigation links */
 .main-nav a {
->>>>>>> 2ec60ff693bcf9562150a59f381c1cd148632dd0
     color: var(--white);
     font-weight: bold;
-<<<<<<< HEAD
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s;
-}
-
-.nav-button:hover {
-    background-color: rgba(0, 51, 102, 0.1);
-}
-
-=======
     transition: color 0.3s ease, transform 0.3s ease; /* Suavidade */
 }
 
->>>>>>> 2ec60ff693bcf9562150a59f381c1cd148632dd0
 /* Navigation link styles */
 .main-nav a {
     position: relative;
@@ -207,86 +188,6 @@ body {
     overflow-x: auto;
 }
 
-<<<<<<< HEAD
-/* Naipe tabs */
-.naipe-tabs {
-    display: flex;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid var(--medium-blue);
-}
-
-.tab-button {
-    padding: 0.8rem 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--dark-blue);
-    transition: all 0.3s;
-}
-
-.tab-button:hover {
-    background-color: rgba(0,51,102,0.1);
-}
-
-.tab-button.active {
-    background-color: var(--medium-blue);
-    color: white;
-}
-
-.naipe-content {
-    display: none;
-}
-
-/* Table enhancements */
-.rodada-header {
-    background-color: var(--dark-blue);
-    color: white;
-    font-weight: bold;
-}
-
-.rodada-header td {
-    padding: 0.8rem;
-    text-align: center;
-}
-
-.classificacao-dia {
-    background-color: rgba(255,215,0,0.2);
-}
-
-.classificacao-dia td {
-    padding: 0.8rem;
-    text-align: center;
-    font-weight: bold;
-}
-
-.games-table h3 {
-    color: var(--dark-blue);
-    margin-bottom: 1rem;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .games-table table {
-        font-size: 0.9rem;
-    }
-    
-    .tab-button {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
-    }
-    
-    .games-table th, 
-    .games-table td {
-        padding: 0.5rem;
-    }
-}
-
-=======
->>>>>>> 2ec60ff693bcf9562150a59f381c1cd148632dd0
 /* Table base styles */
 .games-table table {
     width: 100%;
@@ -345,16 +246,11 @@ body {
 /* GALLERY SECTION */
 /* ====================== */
 /* Photo gallery styles */
-<<<<<<< HEAD
-=======
 .gallery-container {
     margin-bottom: 2rem;
 }
->>>>>>> 2ec60ff693bcf9562150a59f381c1cd148632dd0
 
 
-<<<<<<< HEAD
-=======
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -386,7 +282,6 @@ body {
     color: var(--yellow);
 }
 
->>>>>>> 2ec60ff693bcf9562150a59f381c1cd148632dd0
 /* ====================== */
 /* NEWS SECTION */
 /* ====================== */
