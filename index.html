@@ -17,6 +17,7 @@
                 <h2>Handebol Infantil</h2>
             </div>
         </div>
+        
         <nav class="main-nav">
             <ul>
                 <li onclick="location.href='/'"><a>Inicio</a></li>
@@ -30,82 +31,133 @@
     </header>
 
     <main>
-       <!--SEÇÃO FOTOS E MANCHETES-->
-       <div class="gallery-container">
-        <div class="gallery-item">
-            <img src="../assets/manchetes/handbol_guy.jpg" alt="Handebol 1">
-        </div>
-        <div class="gallery-item">
-            <img src="../assets/manchetes/handbol_girl.jpeg" alt="Handebol 2">
-        </div>
-        <div class="gallery-item">
-            <img src="../assets/manchetes/handbol_tst.jpg" alt="Handebol 3">
-        </div>
-    </div>
-        
-
-        <!--SEÇÃO RESULTADOS-->
-        <section id="resultados" class="section">
-            <h2>Resultados</h2>
-            <div class="content">
-                <div class="results-container">
-                    <div class="result-card">
-                        <div class="result-date">15/05</div>
-                        <div class="teams">
-                            <div class="team">
-                                <span class="team-name">Time A</span>
-                                <span class="team-score">12</span>
-                            </div>
-                            <div class="vs">x</div>
-                            <div class="team">
-                                <span class="team-name">Time B</span>
-                                <span class="team-score">10</span>
-                            </div>
+       <!--SEÇÃO FOTOS E MANCHETES-->   
+        <section class="news">
+            <h2>Principais Noticias</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <div class="news-image-container">
+                        <img src="../assets/manchetes/handbol_guy.jpg" alt="Notícia 1">
+                        <div class="news-description">
+                            <p>Descrição detalhada da notícia sobre o jogador em ação durante o campeonato regional.</p>
                         </div>
-                        <div class="result-info">
-                            <span class="location">Quadra 1</span>
-                            <span class="time">09:00</span>
-                        </div>
+                        <h3 class="news-title">Jovem Atleta se Destaca no Campeonato</h3>
                     </div>
-                    <div class="result-card">
-                        <div class="result-date">15/05</div>
-                        <div class="teams">
-                            <div class="team">
-                                <span class="team-name">Time C</span>
-                                <span class="team-score">8</span>
-                            </div>
-                            <div class="vs">x</div>
-                            <div class="team">
-                                <span class="team-name">Time D</span>
-                                <span class="team-score">15</span>
-                            </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-image-container">
+                        <img src="../assets/manchetes/handbol_girl.jpeg" alt="Notícia 2">
+                        <div class="news-description">
+                            <p>Equipe feminina mostra excelente desempenho nas quartas de final do torneio.</p>
                         </div>
-                        <div class="result-info">
-                            <span class="location">Quadra 2</span>
-                            <span class="time">10:30</span>
-                        </div>
+                        <h3 class="news-title">Equipe Feminina Avança às Semifinais</h3>
                     </div>
-                    <div class="result-card">
-                        <div class="result-date">22/05</div>
-                        <div class="teams">
-                            <div class="team">
-                                <span class="team-name">Time B</span>
-                                <span class="team-score">-</span>
-                            </div>
-                            <div class="vs">x</div>
-                            <div class="team">
-                                <span class="team-name">Time C</span>
-                                <span class="team-score">-</span>
-                            </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-image-container">
+                        <img src="../assets/manchetes/handbol_tst.jpg" alt="Notícia 3">
+                        <div class="news-description">
+                            <p>Nova geração de atletas impressiona técnicos durante torneio classificatório.</p>
                         </div>
-                        <div class="result-info">
-                            <span class="location">Quadra 1</span>
-                            <span class="time">09:00</span>
+                        <h3 class="news-title">Revelações do Handebol Amazonense</h3>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        
+
+            <section class="match-results">
+                <div class="match-card">
+                    <div class="team-container">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="../assets/times/masc/santa_etelvina_masc.jpg" alt="Time A", loading="lazy">
+                            </div>
+                            <span class="team-name">Santa Etelvina</span>
+                        </div>
+                        
+                        <div class="score-container">
+                            <span class="score">3</span>
+                            <span class="score-divider">:</span>
+                            <span class="score">1</span>
+                        </div>
+                        
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="../assets/times/masc/nelson_alves_masc.jpg" alt="Time B", loading="lazy">
+                            </div>
+                            <span class="team-name">Nelson Alves</span>
+                        </div>
+                    </div>
+                    
+                    <div class="match-info">
+                        <span class="match-date">15 Mai</span>
+                        <span class="match-time">15:30</span>
+                    </div>
+                </div>
+            </section>
+        <!--SEÇÃO RESULTADOS
+            <section id="resultados" class="section">
+                <h2>Resultados</h2>
+                <div class="content">
+                    <div class="results-container">
+                        <div class="result-card">
+                            <div class="result-date">15/05</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <span class="team-name">Time A</span>
+                                    <span class="team-score">12</span>
+                                </div>
+                                <div class="vs">x</div>
+                                <div class="team">
+                                    <span class="team-name">Time B</span>
+                                    <span class="team-score">10</span>
+                                </div>
+                            </div>
+                            <div class="result-info">
+                                <span class="location">Quadra 1</span>
+                                <span class="time">09:00</span>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-date">15/05</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <span class="team-name">Time C</span>
+                                    <span class="team-score">8</span>
+                                </div>
+                                <div class="vs">x</div>
+                                <div class="team">
+                                    <span class="team-name">Time D</span>
+                                    <span class="team-score">15</span>
+                                </div>
+                            </div>
+                            <div class="result-info">
+                                <span class="location">Quadra 2</span>
+                                <span class="time">10:30</span>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-date">22/05</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <span class="team-name">Time B</span>
+                                    <span class="team-score">-</span>
+                                </div>
+                                <div class="vs">x</div>
+                                <div class="team">
+                                    <span class="team-name">Time C</span>
+                                    <span class="team-score">-</span>
+                                </div>
+                            </div>
+                            <div class="result-info">
+                                <span class="location">Quadra 1</span>
+                                <span class="time">09:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
     </main>
 
     <footer class="footer">
