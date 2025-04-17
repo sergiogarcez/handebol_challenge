@@ -1,0 +1,38 @@
+.footer-container { /* Adiciona um contêiner para o rodapé */
+    background-color: #002147;
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.footer-content { /* Estiliza o conteúdo do rodapé */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.footer-section h3 { /* Estiliza o título de cada seção */
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.footer-section p { /* Estiliza o texto de cada seção */
+    margin: 0.5rem 0;
+}
+
+.footer-bottom { 
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #555;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
