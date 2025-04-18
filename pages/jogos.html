@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de Jogos - Desafio Amazonense de Handebol Infantil</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../../Script.js"></script>
+    <script src="../Script.js"></script>
     <script src="../functions_components.js"></script>
     <script> document.addEventListener('DOMContentLoaded', loadHeader(path = ""));</script>
     <script> document.addEventListener('DOMContentLoaded', loadRodape);</script>
@@ -15,159 +15,34 @@
         <section id="jogos" class="section">
             <h2>Tabela de Jogos</h2>
             <div class="content">
-                <div class="naipe-tabs">
-                    <button class="tab-button active" onclick="openNaipe(event, 'masculino')">Masculino</button>
-                    <button class="tab-button" onclick="openNaipe(event, 'feminino')">Feminino</button>
-                </div>
-
-                <div id="masculino" class="naipe-content" style="display: block;">
-                    <div class="games-table">
-                        <h3>Jogos - Naipe Masculino</h3>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Data</th>
-                                    <th>Horário</th>
-                                    <th>Confronto</th>
-                                    <th>Formato</th>
-                                    <th>Local</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Exemplo de rodada -->
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>09:00</td>
-                                    <td>Santa Etelvina x Jarlece Zaranza</td>
-                                    <td>Tradicional</td>
-                                    <td>Quadra 1</td>
-                                </tr>
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>09:45</td>
-                                    <td>Santa Etelvina x Jarlece Zaranza</td>
-                                    <td>Defesas Alternadas</td>
-                                    <td>Quadra 1</td>
-                                </tr>
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>10:30</td>
-                                    <td>Santa Etelvina x Jarlece Zaranza</td>
-                                    <td>Pontuação por Desempenho</td>
-                                    <td>Quadra 1</td>
-                                </tr>
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>11:15</td>
-                                    <td>Nelson Alves x Adalberto Valle</td>
-                                    <td>Tradicional</td>
-                                    <td>Quadra 2</td>
-                                </tr>
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>12:00</td>
-                                    <td>Nelson Alves x Adalberto Valle</td>
-                                    <td>Defesas Alternadas</td>
-                                    <td>Quadra 2</td>
-                                </tr>
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>12:45</td>
-                                    <td>Nelson Alves x Adalberto Valle</td>
-                                    <td>Pontuação por Desempenho</td>
-                                    <td>Quadra 2</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div id="feminino" class="naipe-content" style="display: none;">
-                    <div class="games-table">
-                        <h3>Jogos - Naipe Feminino</h3>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Data</th>
-                                    <th>Horário</th>
-                                    <th>Confronto</th>
-                                    <th>Formato</th>
-                                    <th>Local</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Exemplo de rodada -->
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>14:00</td>
-                                    <td>Santa Etelvina x Jarlece Zaranza</td>
-                                    <td>Tradicional</td>
-                                    <td>Quadra 1</td>
-                                </tr>
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>14:45</td>
-                                    <td>Santa Etelvina x Jarlece Zaranza</td>
-                                    <td>Defesas Alternadas</td>
-                                    <td>Quadra 1</td>
-                                </tr>
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>15:30</td>
-                                    <td>Santa Etelvina x Jarlece Zaranza</td>
-                                    <td>Pontuação por Desempenho</td>
-                                    <td>Quadra 1</td>
-                                </tr>
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>16:15</td>
-                                    <td>Rio Negro x Adalberto Valle</td>
-                                    <td>Tradicional</td>
-                                    <td>Quadra 2</td>
-                                </tr>
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>17:00</td>
-                                    <td>Rio Negro x Adalberto Valle</td>
-                                    <td>Defesas Alternadas</td>
-                                    <td>Quadra 2</td>
-                                </tr>
-                                <tr>
-                                    <td>15/05</td>
-                                    <td>17:45</td>
-                                    <td>Rio Negro x Adalberto Valle</td>
-                                    <td>Pontuação por Desempenho</td>
-                                    <td>Quadra 2</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="games-table" style="align-items: center ;">
+                    <div class="image-carousel">
+                        <button class="carousel-button left" onclick="changeImage(-1)">&#8592;</button>
+                        <img src="..\assets\jogos_tabelas\rodada-01.png" alt="Tabela Rodada 1" class="carousel-image" style="display: block;" />
+                        <img src="..\assets\jogos_tabelas\rodada-02.png" alt="Tabela Rodada 2" class="carousel-image" style="display: none;" />
+                        <img src="..\assets\jogos_tabelas\rodada-03.png" alt="Tabela Rodada 3" class="carousel-image" style="display: none;" />
+                        <img src="..\assets\jogos_tabelas\rodada-04.png" alt="Tabela Rodada 3" class="carousel-image" style="display: none;" />
+                        <img src="..\assets\jogos_tabelas\rodada-05.png" alt="Tabela Rodada 3" class="carousel-image" style="display: none;" />
+                        <button class="carousel-button right" onclick="changeImage(1)">&#8594;</button>
                     </div>
                 </div>
             </div>
-
-            <script>
-                function openNaipe(evt, naipe) {
-                    var i, tabcontent, tabbuttons;
-                    
-                    tabcontent = document.getElementsByClassName("naipe-content");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    
-                    tabbuttons = document.getElementsByClassName("tab-button");
-                    for (i = 0; i < tabbuttons.length; i++) {
-                        tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
-                    }
-                    
-                    document.getElementById(naipe).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
-            </script>
         </section>
     </main>
     <footer> 
         <div id="footer-placeholder"></div>
     </footer>
-     
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentImageIndex = 0;
+            const images = document.querySelectorAll('.carousel-image');
+
+            window.changeImage = function(direction) {
+                images[currentImageIndex].style.display = 'none';
+                currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+                images[currentImageIndex].style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>

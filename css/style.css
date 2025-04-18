@@ -177,59 +177,6 @@ body {
 }
 
 /* ====================== */
-/* TABLES */
-/* ====================== */
-/* Styles for game and classification tables */
-.games-table, .classification-table {
-    background: var(--white);
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 1rem 0;
-    overflow-x: auto;
-}
-
-/* Table base styles */
-.games-table table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-/* Table header and cell styles */
-/* ====================== */
-/* TABLE CELLS */
-/* ====================== */
-/* Table header and cell styles */
-.games-table th, .games-table td {
-    padding: 0.75rem;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Table header specific styles */
-.games-table th {
-    background-color: var(--medium-blue);
-    color: white;
-    font-weight: bold;
-}
-
-/* Zebra striping for table rows */
-.games-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-/* Table row hover effect */
-.games-table tr:hover {
-    background-color: #f1f1f1;
-}
-
-/* Style for upcoming games */
-.games-table .upcoming {
-    font-weight: bold;
-    color: var(--dark-blue);
-}
-
-/* ====================== */
 /* RESPONSIVE STYLES */
 /* ====================== */
 /* Tablet and mobile breakpoint */
@@ -351,18 +298,6 @@ body {
     body {
         padding-top: 150px;
     }
-}
-
-/* ====================== */
-/* FOOTER */
-/* ====================== */
-/* Site footer styles */
-.footer {
-    background-color: var(--dark-blue);
-    color: var(--white);
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
 }
 
 /* ====================== */
@@ -1158,3 +1093,46 @@ body {
     border-top: 1px solid #eee;
     padding-top: 1rem;
 }
+
+
+/* Center the table image */
+.table-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for image carousel container */
+.image-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for carousel images */
+.carousel-image {
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* Styles for carousel buttons */
+.carousel-button {
+    background-color: rgba(0, 33, 71, 0.7);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+
