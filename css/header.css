@@ -29,32 +29,61 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: var(--white);
-    padding-top: 100px; /* Space for fixed header */
+    padding-top: 0; /* Space for fixed header */
 }
 
 .header {
     background-color: var(--dark-blue);
     color: var(--white);
     padding: 1rem;
-    position: fixed;
+    position: static;
     width: 100%;
     top: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+#left-level, #right-level {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+    flex: 1;
+}
+#left-level {
+    justify-content: flex-end;
+}
+#right-level {
+    justify-content: flex-start;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 0 auto;
 }
 
 /* Container for logo and title */
 .logo-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* Logo image styles */
 .logo {
-    height: 60px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
     margin-right: 1rem;
 }
 
@@ -82,11 +111,33 @@ body {
 .main-nav ul {
     display: flex;
     list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 5rem;
+}
+.main-nav a {
+    font-size: 1.2rem;
 }
 
 /* Navigation menu items */
 .main-nav li {
-    margin-left: 1.5rem;
+    margin-left: 0;
+}
+
+/* Shift the first two tabs (Inicio and Sobre) slightly to the left */
+.main-nav li:nth-child(1),
+.main-nav li:nth-child(2) {
+    transform: translateX(-20px);
+}
+
+.main-nav li:nth-child(3),
+.main-nav li:nth-child(4) {
+    transform: translateX(60px);
+}
+
+.main-nav li:nth-child(3) {
+    margin-left: 3rem;
 }
 
 /* Navigation links */
