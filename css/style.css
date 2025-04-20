@@ -1084,15 +1084,7 @@ body {
     color: #666;
 }
 
-.match-info {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    color: #666;
-    font-size: 0.9rem;
-    border-top: 1px solid #eee;
-    padding-top: 1rem;
-}
+
 
 
 /* Center the table image */
@@ -1135,15 +1127,27 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.match-info {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+}
+
+
 .match-card {
-    background: #f4f4f4;
+    background: linear-gradient(0deg, var(--dark-blue) 0%, var(--medium-blue) 100%);
     padding: 15px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
   
+
   .match-info p {
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
   }
@@ -1159,6 +1163,11 @@ body {
     text-align: center;
   }
   
+  .team p {
+    margin: 5px 0;
+    color: #ffffff;
+  }
+
   .team img {
     width: 80px;
     height: 80px;
@@ -1167,10 +1176,11 @@ body {
   .score {
     font-size: 24px;
     font-weight: bold;
+    color: #ffffff;
   }
   
   .match-location {
     margin-top: 10px;
     font-size: 16px;
-    color: #666;
+    color: #ffffff;
   }

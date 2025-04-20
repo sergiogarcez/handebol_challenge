@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         clickable: true
         },
         autoplay: { // Auto play dos slides
-        delay: 3000
+        delay: 4000
         }
     });
 });
