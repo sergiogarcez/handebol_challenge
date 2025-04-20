@@ -16,3 +16,20 @@ function loadHeader(path = 'pages') {
         })
         .catch(error => console.error('Error loading header:', error));
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.swiper', {
+        loop: true, // Loop infinito dos slides
+        navigation: { // Botões de navegação
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+        },
+        pagination: { // Paginação
+        el: '.swiper-pagination',
+        clickable: true
+        },
+        autoplay: { // Auto play dos slides
+        delay: 3000
+        }
+    });
+});

@@ -1135,4 +1135,42 @@ body {
     transition: background-color 0.3s ease;
 }
 
-
+.match-card {
+    background: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .match-info p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .team {
+    text-align: center;
+  }
+  
+  .team img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .score {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .match-location {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+  }
