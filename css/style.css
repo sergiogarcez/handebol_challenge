@@ -1139,10 +1139,11 @@ body {
 
 .match-card {
     background: linear-gradient(0deg, var(--dark-blue) 0%, var(--medium-blue) 100%);
-    padding: 15px;
+    padding: 30px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-top: 25px;
   }
   
 
@@ -1180,7 +1181,8 @@ body {
   }
   
   .match-location {
-    margin-top: 10px;
+    margin-top: -20px;
     font-size: 16px;
+    font-weight: bold;
     color: #ffffff;
   }
