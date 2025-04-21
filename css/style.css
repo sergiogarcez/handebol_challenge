@@ -1209,3 +1209,68 @@ body {
     font-weight: bold;
     color: #ffffff;
   }
+
+/*Mobile Responsive Styles*/
+@media (max-width: 768px) {
+    .header {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .title-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .title-container h2 {
+        font-size: 1rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .news-grid,
+    .teams-grid,
+    .gallery-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 120px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .news-title {
+        font-size: 1rem;
+    }
+
+    .team-card {
+        padding: 1rem;
+    }
+}
