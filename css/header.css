@@ -1,0 +1,200 @@
+/* ====================== */
+/* CSS VARIABLES */
+/* ====================== */
+/* Define global color variables used throughout the site */
+:root {
+    --dark-blue: #002147;
+    --medium-blue: #003366;
+    --yellow: #FFD700;
+    --white: #FFFFFF;
+    --gray:  #575656;
+}
+
+/* ====================== */
+/* GLOBAL STYLES */
+/* ====================== */
+/* Reset and base styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+/* aaaaa */
+/* ====================== */
+/* PAGE BODY */
+/* ====================== */
+/* Base styles for the page body */
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--white);
+    padding-top: 0; /* Space for fixed header */
+}
+
+.header {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1rem;
+    position: static;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+#left-level, #right-level {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+    flex: 1;
+}
+#left-level {
+    justify-content: flex-end;
+}
+#right-level {
+    justify-content: flex-start;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+
+/* Container for logo and title */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Logo image styles */
+.logo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 1rem;
+}
+
+/* ====================== */
+/* HEADER TITLE */
+/* ====================== */
+/* Main title in header */
+.title-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    color: var(--yellow);
+}
+
+/* Subtitle in header */
+.title-container h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--white);
+}
+
+/* ====================== */
+/* NAVIGATION */
+/* ====================== */
+/* Main navigation menu */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 5rem;
+}
+.main-nav a {
+    font-size: 1.2rem;
+}
+
+/* Navigation menu items */
+.main-nav li {
+    margin-left: 0;
+}
+
+/* Shift the first two tabs (Inicio and Sobre) slightly to the left */
+.main-nav li:nth-child(1),
+.main-nav li:nth-child(2) {
+    transform: translateX(-20px);
+}
+
+.main-nav li:nth-child(3),
+.main-nav li:nth-child(4) {
+    transform: translateX(60px);
+}
+
+.main-nav li:nth-child(3) {
+    margin-left: 3rem;
+}
+
+/* Navigation links */
+.main-nav a {
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Suavidade */
+}
+
+/* Navigation link styles */
+.main-nav a {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Navigation link hover state */
+.main-nav a:hover {
+    color: var(--yellow);
+    transform: scale(1.1);
+    animation: pulse 0.5s ease;
+}
+
+/* Animated underline effect */
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: var(--yellow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: left;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1.1); }
+}
+
+/* Efeito de "fade-in" na logo */
+.logo {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Jogos - Desafio Amazonense de Handebol Infantil</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../Script.js"></script>
+    <script src="../functions_components.js"></script>
+    <script> document.addEventListener('DOMContentLoaded', loadHeader(path = ""));</script>
+    <script> document.addEventListener('DOMContentLoaded', loadRodape);</script>
+</head>
+<body>
+    <main>
+        <section id="jogos" class="section">
+            <h2>Tabela de Jogos</h2>
+            <div class="content">
+                <div class="games-table" style="align-items: center ;">
+                    <div class="image-carousel">
+                        <button class="carousel-button left" onclick="changeImage(-1)">&#8592;</button>
+                        <img src="..\assets\jogos_tabelas\rodada-01.png" alt="Tabela Rodada 1" class="carousel-image" style="display: block;" />
+                        <img src="..\assets\jogos_tabelas\rodada-02.png" alt="Tabela Rodada 2" class="carousel-image" style="display: none;" />
+                        <img src="..\assets\jogos_tabelas\rodada-03.png" alt="Tabela Rodada 3" class="carousel-image" style="display: none;" />
+                        <img src="..\assets\jogos_tabelas\rodada-04.png" alt="Tabela Rodada 3" class="carousel-image" style="display: none;" />
+                        <img src="..\assets\jogos_tabelas\rodada-05.png" alt="Tabela Rodada 3" class="carousel-image" style="display: none;" />
+                        <button class="carousel-button right" onclick="changeImage(1)">&#8594;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> 
+        <div id="footer-placeholder"></div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentImageIndex = 0;
+            const images = document.querySelectorAll('.carousel-image');
+
+            window.changeImage = function(direction) {
+                images[currentImageIndex].style.display = 'none';
+                currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+                images[currentImageIndex].style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
