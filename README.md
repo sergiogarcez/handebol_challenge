@@ -28,11 +28,8 @@ O projeto faz parte de uma pesquisa do Laboratório de Pedagogia do Esporte (LAP
 
 **Desenvolvimento do Site**: 
 - Douglas da Costa Cruz (douglascruztst11@gmail.com)
-<<<<<<< HEAD
-- Sérgio Juniors Garcez (seegio.jr.10@gmail)
-=======
 - Sérgio Juniors Garcez (seegio.jr.10@gmail.com)
->>>>>>> 2ec60ff693bcf9562150a59f381c1cd148632dd0
+
 
 **Contato Principal**: 
 - (92) 98418-4450 (WhatsApp)
@@ -52,10 +49,35 @@ handebol_challenge/
 ├── Script.js           # JavaScript principal
 ├── assets/             # Arquivos estáticos
 │   ├── icon.ico        # Ícone do site
-│   └── logo.jpg        # Logo do evento
+│   ├── logo.jpg        # Logo do evento
+│   ├── jogos_tabelas/  # Imagens das tabelas de jogos
+│   ├── logos/          # Logos das equipes
+│   ├── manchetes/      # Imagens das manchetes
+│   ├── patrocinadores/ # Imagens dos patrocinadores
+│   └── times/          # Fotos dos times (masculino e feminino)
 ├── css/                # Folhas de estilo
+│   ├── header.css      # Estilos do cabeçalho
+│   ├── rodape.css      # Estilos do rodapé
 │   └── style.css       # Estilos principais
-└── js/                 # Outros scripts JavaScript
+├── components/         # Componentes HTML reutilizáveis
+│   ├── header.html     # Cabeçalho do site
+│   └── rodape.html     # Rodapé do site
+├── pages/              # Páginas do site
+│   ├── equipes.html    # Página das equipes
+│   ├── jogos.html      # Página da tabela de jogos
+│   ├── sobre.html      # Página sobre o evento
+│   ├── manchete1.html  # Páginas de manchetes
+│   ├── manchete2.html
+│   ├── manchete3.html
+│   ├── manchete4.html
+│   ├── manchete5.html
+│   └── manchete6.html
+├── backend/            # Backend Flask (se aplicável)
+│   ├── app.py
+│   └── dados.json
+├── functions_components.js  # Funções JavaScript para componentes
+├── navigation.js            # Script de navegação
+└── resize_images.bat        # Script para redimensionar imagens
 ```
 
 ## 🚀 Como Executar
