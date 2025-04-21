@@ -201,58 +201,43 @@ body {
 
 
 /* Responsive mobile styles */
-
 @media (max-width: 768px) {
     .header {
         padding: 0.5rem;
-        text-align: center;
     }
 
     .main-nav {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         gap: 1rem;
     }
 
     #left-level, #right-level {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         gap: 1rem;
-        justify-content: center;
-    }
-
-    .logo {
-        width: 100px;
-        height: 100px;
     }
 
     .logo-container {
-        margin: 10px 0;
+        margin: 0 1rem;
     }
 
-    .title-container h1 {
-        font-size: 1.2rem;
-    }
-
-    .title-container h2 {
-        font-size: 1rem;
-    }
-
-    .main-nav li {
-        transform: none !important;
-        margin: 5px 0;
+    .logo {
+        width: 60px;
+        height: 60px;
     }
 
     .main-nav a {
+        font-size: 0.9rem;
+    }
+
+    .title-container h1 {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 480px) {
-    .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .main-nav {
-        gap: 0.5rem;
+    .title-container h2 {
+        font-size: 0.8rem;
     }
 }
