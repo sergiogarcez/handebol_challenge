@@ -209,19 +209,29 @@ body {
     .main-nav {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 0.6rem;
+        width: 100%;
     }
 
     #left-level, #right-level {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 0.4rem;
+        flex: 1
+    }
+
+    #left-level {
+        justify-content: flex-end;
+    }
+
+    #right-level {
+        justify-content: flex-start;
     }
 
     .logo-container {
-        margin: 0 1rem;
+        margin: 0rem;
     }
 
     .logo {
@@ -230,14 +240,14 @@ body {
     }
 
     .main-nav a {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .title-container h1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .title-container h2 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
