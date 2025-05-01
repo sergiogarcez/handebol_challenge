@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "titulo": "Nova tecnologia revoluciona a IA",
+        "conteudo": "Pesquisadores avançam no desenvolvimento de inteligência artificial.",
+        "imagem": "handbol_girl.jpeg",
+        "data_publicacao": "2025-04-19"
+    },
+    {
+        "id": 2,
+        "titulo": "Exploração espacial atinge novo marco",
+        "conteudo": "A humanidade dá um novo passo na exploração do universo.",
+        "imagem": "handbol_guy.jpg",
+        "data_publicacao": "2025-04-18"
+    },
+    {
+        "id": 3,
+        "titulo": "Campeonato regional de handebol começa amanhã",
+        "conteudo": "Equipes locais se preparam para o início do campeonato.",
+        "imagem": "handbol_tst.jpg",
+        "data_publicacao": "2025-04-17"
+    },
+    {
+        "id": 4,
+        "titulo": "Treinamento intensivo para jovens atletas",
+        "conteudo": "Programa especial para desenvolvimento de habilidades no handebol.",
+        "imagem": "handbol_girl.jpeg",
+        "data_publicacao": "2025-04-16"
+    },
+    {
+        "id": 5,
+        "titulo": "Novas regras aprovadas para a temporada",
+        "conteudo": "Alterações nas regras visam tornar o jogo mais dinâmico.",
+        "imagem": "handbol_guy.jpg",
+        "data_publicacao": "2025-04-15"
+    },
+    {
+        "id": 6,
+        "titulo": "Evento beneficente arrecada fundos para clubes locais",
+        "conteudo": "Comunidade se une para apoiar o esporte infantil.",
+        "imagem": "handbol_tst.jpg",
+        "data_publicacao": "2025-04-14"
+    }
+]
