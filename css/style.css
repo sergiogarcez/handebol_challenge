@@ -46,6 +46,9 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /* Container for logo and title */
 .logo-container {
     display: flex;
@@ -656,6 +659,7 @@ body {
 
 .team-name {
     font-weight: bold;
+    color: var(--white);
     margin-bottom: 0.5rem;
 }
 
@@ -1053,7 +1057,10 @@ body {
 /* Results section, css useds*/
 
 .match-results {
-    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 800px;
     margin: 2rem auto;
 }
 
@@ -1106,7 +1113,7 @@ body {
 }
 
 .score-divider {
-    color: #666;
+    color: var(--white);
 }
 
 
@@ -1156,11 +1163,20 @@ body {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    font-size: 24px;
+    font-weight: bold;
     color: #ffffff;
     font-size: 0.9rem;
     padding-top: 1rem;
 }
 
+.match-results-left,
+.match-results-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 .match-card {
     background: linear-gradient(0deg, var(--dark-blue) 0%, var(--medium-blue) 100%);
@@ -1168,7 +1184,7 @@ body {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-top: 25px;
+    margin-top: 20px;
   }
   
 
